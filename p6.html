@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alphanumerical Sorting Algorithm</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    #output {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    h1 {
+      color: #0047ab;
+    }
+  </style>
+</head>
+<body>
+
+<div id="output">
+  <h1>Alphanumerical Sorting Algorithm</h1>
+  <p><strong>Original array:</strong></p>
+  <p id="array">mango, TuttyFruity, Bell, 1DS22IS108, Peanuts, HoD, Z, dob, 3300, hod, Jack</p>
+  <p><strong>Sorted array:</strong></p>
+  <p id="sortedArray"></p>
+</div>
+
+<script>
+  // Original array
+  const elements = [
+    "mango", "TuttyFruity", "Bell", "1DS22IS108", "Peanuts", "HoD", "Z",
+    "dob", "3300", "hod", "Jack"
+  ];
+
+  // Custom alphanumerical sort using localeCompare (case-insensitive)
+  elements.sort((a, b) => a.toString().localeCompare(b.toString(), undefined, { sensitivity: 'base' }));
+
+  // Display result in browser
+  document.getElementById("sortedArray").innerText = elements.join(", ");
+</script>
+
+</body>
+</html>
