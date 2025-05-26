@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Teacher Meet</title>
+  <link rel="stylesheet" href="p4.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h3>DAYANANDA SAGAR COLLEGE OF ENGINEERING</h3>
+      <p>(An Autonomous Institute affiliated to Visvesvaraya Technological University (VTU), Belagavi.<br>
+      Approved by AICTE and UGC, Accredited by NAAC with 'A' grade & ISO 9001-2015 Certified Institution)</p>
+      <h4>DEPARTMENT OF INFORMATION SCIENCE & ENGINEERING</h4>
+    </div>
+
+    <div class="logo-container">
+      <img src="DSCE Logo.jpg" alt="DSCE Logo">
+      <img src="iiclogo.jpg" alt="IIC Logo">
+      <img src="iqac.jpeg" alt="IQAC Logo">
+    </div>
+
+    <div class="content">
+      <div class="meeting-box">
+        1st Year ISE <br> PARENT TEACHERS MEETING
+      </div>
+
+      <div class="illustration">
+        <img src="meeting.jpeg" alt="Parent Teacher Meeting">
+      </div>
+
+      <div class="details">
+        April 12, 2025 | 02:00 PM<br>
+        <div class="venue">VENUE: ISE - 308</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-grid">
+        <div>
+          <div>Dr. Madhura J</div>
+          <div>Prof. Bharath B C</div>
+          <div class="designation">Faculty Coordinators,</div>
+          <div class="designation">Dept. of ISE</div>
+        </div>
+
+        <div>
+          <div>Dr. Annapurna P Patil</div>
+          <div class="designation">Dean Academics and</div>
+          <div class="designation">HoD of ISE, DSCE</div>
+        </div>
+
+        <div>
+          <div>Dr. B G Prasad</div>
+          <div class="designation">Principal, DSCE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+/* P4.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.card {
+  display: grid;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.header {
+  background-color: #0047ab;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.header p {
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+.logo-container img {
+  height: 50px;
+  margin: 5px;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.meeting-box {
+  background-color: #0047ab;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 225px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.details {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0047ab;
+}
+
+.venue {
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.designation {
+  font-style: italic;
+  color: #333;
+}
