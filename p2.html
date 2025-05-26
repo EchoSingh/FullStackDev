@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration Form</title>
+</head>
+<body>
+
+  <!-- Header Image -->
+  <div style="text-align: center;">
+    <img src="DeptHeader.png" alt="Department Header" width="65%">
+  </div>
+
+  <!-- Form Section -->
+  <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <h2><u>Input Validation Course Registration Form</u></h2>
+
+    <form action="#">
+      <table>
+        <tr>
+          <td><label for="name">Student Name:</label></td>
+          <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+          <td><label for="usn">Student USN:</label></td>
+          <td><input type="text" id="usn" name="usn" required></td>
+        </tr>
+        <tr>
+          <td><label for="semester">Semester:</label></td>
+          <td><input type="text" id="semester" name="semester" required></td>
+        </tr>
+        <tr>
+          <td><label for="section">Section:</label></td>
+          <td>
+            <select id="section" name="section" required style="width: 170px;">
+              <option value="" disabled selected>Select your section</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone Number:</label></td>
+          <td><input type="tel" id="phone" name="phone" required></td>
+        </tr>
+        <tr>
+          <td><label for="course">Courses:</label></td>
+          <td>
+            <select id="course" name="course" required style="width: 170px;">
+              <option value="">-- Choose the course --</option>
+              <option value="BDA">Big Data Analytics</option>
+              <option value="FSD">Full Stack Development</option>
+              <option value="SE">Software Engineering</option>
+              <option value="ST">Software Testing</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Fees Paid:</label></td>
+          <td>
+            <input type="radio" id="feesYes" name="feesPaid" value="Yes" required>
+            <label for="feesYes">Yes</label>
+            <input type="radio" id="feesNo" name="feesPaid" value="No" required>
+            <label for="feesNo">No</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="padding-top: 15px;">
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+              <input type="submit" value="Submit" style="width: 48%;">
+              <input type="reset" value="Reset" style="width: 48%;">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</body>
+</html>
